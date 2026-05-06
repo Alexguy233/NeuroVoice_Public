@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecordingPrototype</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="initialPrototype.css">
+</head>
+<body>
+    
+    <main>
+        <p class="titleMessage">Press the record icon and repeat PA-TA-KA Syllables as many times as you can.
+            <br> Press it again to stop recording. If satisfied, click submit recording upon entering your userID.
+        </p>
+        <div class="idInput"><label for="pID">Enter your participant id:</label>
+        <input id="pID" name="pID">
+        </div>
+
+        <button class="mic-toggle" id="mic">
+            <span class="material-icons">mic</span>
+        </button>
+
+        <audio class="playback is-hidden" controls></audio>
+    
+        <button class="submit isInactive" id="submit">Submit Recording</button>
+        <p class="userMessage">Press the red icon to begin recording. Press it again to stop</p>
+
+    </main>
+
+    <script src="initialPrototype.js" type="module"></script>
+</body>
+</html>

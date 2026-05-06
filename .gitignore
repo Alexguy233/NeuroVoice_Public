@@ -1,0 +1,6 @@
+*.pem
+*.ogg
+node_modules/
+powderTest.py
+*.wav
+
