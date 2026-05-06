@@ -51,13 +51,7 @@ initialPrototype.css
 defines .css and animation of button
 
 TOO FIX:
-There is a bug with audioQuery where if the user enters only the r\_id it doesnt work as expected.
-Change getSyllables to instead of building the mean by index scan look for periods of a high amplitude above .6 where another amplitude of .6 is one syllable beyond it (so high, low, high, emplying pa, ta, ka), and use those guesses to build the median factor.
-Refactor getSyllables.py to separate all the syllable sections ahead of computing the guestimate mean and actual syllables so you dont do it twice and can more easily test.
-Once changed have taTime, kaTime, and taTime in getSyllables be computed before the second loop identifying syllables.
-Change getMetrics in getSyllables to compute detected repetitions by scanning for T and looking to its left and right rather than index due to T having an 80% accuracy.
-Make recording in initialPrototype.js of the website end automatically after 5 seconds.
-Was told at the symposium to consider looking at the frequency domain, and apply fft to the audio and cut of the lower frequency with the 'a' sound so you can look at the beginning.
+--Removed for security--
 
 List of things I've tried that didn't work:
 Librosa, sphinx, and open ai whisper all failed to properly categorize syllables
