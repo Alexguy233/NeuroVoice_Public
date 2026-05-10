@@ -7,7 +7,7 @@ so the webpage likely will not work as intended.
 How to Run:
 The Website:
 write
-node app.js
+node dist/app.js
 in terminal in visual studio. On another computer, open the website
 
 based on ip address. Put in an id/name, click record, record something, and then click submit.
