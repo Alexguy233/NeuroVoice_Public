@@ -61,8 +61,8 @@ const server = https.createServer(sslOptions, (req, res) => {
         else if (pathname === '/initialPrototype.css') {
             serveFile('./initialPrototype.css', 'text/css');
         } //Uncomment to allow viewing the js in browser
-        else if (pathname === '/initialPrototype.js') {
-            serveFile('./initialPrototype.js', 'application/javascript');
+        else if (pathname === '/dist/initialPrototype.js') {
+            serveFile('./dist/initialPrototype.js', 'application/javascript');
         }
         else {
             res.writeHead(404, { 'Content-Type': 'text/plain' });
